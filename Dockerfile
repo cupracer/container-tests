@@ -18,6 +18,7 @@ RUN \
 		net-tools \
 		python \
 		python-xml \
+		python3 \
 		sudo \
 		tar \
 		timezone \
