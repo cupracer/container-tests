@@ -8,7 +8,6 @@ ARG cert
 
 RUN \
 	echo "$cert" > /etc/pki/trust/anchors/RHN-ORG-TRUSTED-SSL-CERT.pem && \
-	curl -o /etc/pki/trust/anchors/registry.pem http://datasrv.infra.cupracer.net/DATASRV.INFRA.CUPRACER.NET-CA.crt && \
 	update-ca-certificates && \
 	echo "$repo" > /etc/zypp/repos.d/susemanager:dockerbuild.repo
 
