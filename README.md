@@ -1,1 +1,1 @@
-# container-suse-test1
+# container-tests
