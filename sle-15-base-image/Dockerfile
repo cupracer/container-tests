@@ -1,8 +1,6 @@
 FROM registry.suse.com/suse/sle15:15.1
 MAINTAINER Thomas Schulte "thomas@cupracer.de"
 
-### 
-
 ARG repo
 ARG cert
 
