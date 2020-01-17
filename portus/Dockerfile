@@ -23,9 +23,6 @@ RUN \
 		timezone \
 		vim
 
-RUN curl -o /etc/pki/trust/anchors/datasrv.infra.cupracer.net-ca.crt http://datasrv.infra.cupracer.net/DATASRV.INFRA.CUPRACER.NET-CA.crt && \
-	update-ca-certificates
-
 ###
 
 RUN rm -f /etc/zypp/repos.d/susemanager:dockerbuild.repo
