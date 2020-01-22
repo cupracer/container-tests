@@ -9,6 +9,7 @@ RUN \
 	update-ca-certificates && \
 	echo "$repo" > /etc/zypp/repos.d/susemanager:dockerbuild.repo && \
 	zypper --non-interactive --gpg-auto-import-keys ref && \
+	zypper --non-interactive update && \
 	zypper --non-interactive install \
 		aaa_base \
 		aaa_base-extras \
